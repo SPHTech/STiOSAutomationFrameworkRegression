@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite_seq]">
+  <test name="StraitsTimes_Regression_IOS-Run1(failed)">
+    <parameter name="Locality" value="Cloud"/>
+    <parameter name="appType" value="Hybrid"/>
+    <parameter name="ExecutionType" value="Sequential"/>
+    <parameter name="testname1" value="StraitsTimes_Regression_IOS"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="testname" value="StraitsTimes_Regression_IOS-Run1"/>
+    <parameter name="RemoteUrl" value="https://sph.experitest.com/wd/hub"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="udid" value="00008030-0002548A2298802E"/>
+    <parameter name="deviceName" value="Yes"/>
+    <parameter name="toolName" value="Appium"/>
+    <classes>
+      <class name="com.mop.qa.test.regression.StraitsTimes_settings_phase1">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="startTestReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.mop.qa.test.regression.StraitsTimes_settings_phase1 -->
+      <class name="com.mop.qa.test.regression.StraitTimes_homePage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="startTestReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.mop.qa.test.regression.StraitTimes_homePage -->
+      <class name="com.mop.qa.test.regression.App_installation_and_login">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="startTestReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.mop.qa.test.regression.App_installation_and_login -->
+      <class name="com.mop.qa.test.regression.Article_Listing_Page">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="startTestReport"/>
+          <include name="Launch_and_Close_app"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.mop.qa.test.regression.Article_Listing_Page -->
+      <class name="com.mop.qa.test.regression.StraitsTimes_Regression_IOS">
+        <methods>
+          <include name="TC_7923_Articles_Details_Scroll_Verify_article_scroll"/>
+          <include name="afterMethod"/>
+          <include name="TC_7897_Discover_on_Home_Page"/>
+          <include name="TC_7982_Article_listing_page_Via_Elastic_search_Keyword_search_Relevance"/>
+          <include name="TC_7954_Article_listing_page_Via_Elastic_search_Recent_searches_Delete"/>
+          <include name="startTestReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.mop.qa.test.regression.StraitsTimes_Regression_IOS -->
+      <class name="com.mop.qa.test.regression.Articles_detail_page">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="startTestReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.mop.qa.test.regression.Articles_detail_page -->
+      <class name="com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg">
+        <methods>
+          <include name="executeSuite"/>
+          <include name="afterMethod"/>
+          <include name="Launch_and_Close_app"/>
+          <include name="startTestReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg -->
+      <class name="com.mop.qa.test.regression.ST_Epaper">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="startTestReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.mop.qa.test.regression.ST_Epaper -->
+      <class name="com.mop.qa.test.regression.ST_Regression_sprint12">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="startTestReport"/>
+          <include name="beforeMethod"/>
+          <include name="Launch_and_Close_app"/>
+        </methods>
+      </class> <!-- com.mop.qa.test.regression.ST_Regression_sprint12 -->
+    </classes>
+  </test> <!-- StraitsTimes_Regression_IOS-Run1(failed) -->
+</suite> <!-- Failed suite [Suite_seq] -->

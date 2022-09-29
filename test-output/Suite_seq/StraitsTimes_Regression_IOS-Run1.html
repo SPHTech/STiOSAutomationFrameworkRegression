@@ -1,0 +1,508 @@
+<html>
+<head>
+<title>TestNG:  StraitsTimes_Regression_IOS-Run1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>StraitsTimes_Regression_IOS-Run1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 15 09:22:56 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>3485 seconds (3485412 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7897_Discover_on_Home_Page()'><b>TC_7897_Discover_on_Home_Page</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td><div><pre>java.lang.Exception: discover heading not found
+	at com.mop.qa.testbase.PageBase.click(PageBase.java:1521)
+	at com.mop.qa.pageobject.StraitsTimes_IOS.TC_7897_Discover_on_Home_Page(StraitsTimes_IOS.java:2382)
+	at com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7897_Discover_on_Home_Page(StraitsTimes_Regression_IOS.java:226)
+	at com.mop.qa.testrunner.TestRunner.main(TestRunner.java:167)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1387000972", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387000972'><pre>java.lang.Exception: discover heading not found
+	at com.mop.qa.testbase.PageBase.click(PageBase.java:1521)
+	at com.mop.qa.pageobject.StraitsTimes_IOS.TC_7897_Discover_on_Home_Page(StraitsTimes_IOS.java:2382)
+	at com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7897_Discover_on_Home_Page(StraitsTimes_Regression_IOS.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at com.mop.qa.testrunner.TestRunner.main(TestRunner.java:167)
+</pre></div></td>
+<td>470</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7923_Articles_Details_Scroll_Verify_article_scroll()'><b>TC_7923_Articles_Details_Scroll_Verify_article_scroll</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td><div><pre>java.lang.Exception: home not found
+	at com.mop.qa.testbase.PageBase.click(PageBase.java:1521)
+	at com.mop.qa.pageobject.StraitsTimes_IOS.TC_7923_Articles_Details_Scroll_Verify_article_scroll(StraitsTimes_IOS.java:2863)
+	at com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7923_Articles_Details_Scroll_Verify_article_scroll(StraitsTimes_Regression_IOS.java:67)
+	at com.mop.qa.testrunner.TestRunner.main(TestRunner.java:167)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace921957032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace921957032'><pre>java.lang.Exception: home not found
+	at com.mop.qa.testbase.PageBase.click(PageBase.java:1521)
+	at com.mop.qa.pageobject.StraitsTimes_IOS.TC_7923_Articles_Details_Scroll_Verify_article_scroll(StraitsTimes_IOS.java:2863)
+	at com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7923_Articles_Details_Scroll_Verify_article_scroll(StraitsTimes_Regression_IOS.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at com.mop.qa.testrunner.TestRunner.main(TestRunner.java:167)
+</pre></div></td>
+<td>45</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7954_Article_listing_page_Via_Elastic_search_Recent_searches_Delete()'><b>TC_7954_Article_listing_page_Via_Elastic_search_Recent_searches_Delete</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error (An unknown server-side error occurred. status=&apos;false&apos;. Failed to complete internal method: &apos;elementSendText args: [NATIVE, xpath=(//*[@placeholder=&apos;Search The Straits Times?&apos;])[1], 0, google
+]&apos;, details: Failed to send text to &apos;xpath=(//*[@placeholder=&apos;Search The Straits Times?&apos;])[1]&apos;. Error Domain=XCTDaemonErrorDomain Code=21 &quot;Unable to perform 
+&lt;XCSynthesizedEventRecord &apos;tap display 0&apos;&gt;
+Path 1:
+	
+Touch down at 172.0, 71.0, offset=0.00s
+	Touch up at 172.0, 71.0, offset=0.05s, only one gesture can be performed at a time.&quot; UserInfo={NSLocalizedDescription=Unable to perform 
+
+&lt;XCSynthesizedEventRecord &apos;tap display 0&apos;&gt;
+Path 1:
+	Touch down at 172.0, 71.0, offset=0.00s
+	Touch up at 172.0, 71.0, offset=0.05s, only one gesture can be performed at a time.}
+)  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LTIN184808&apos;, ip: &apos;192.168.0.73&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {appBuildVersion: 4, appReleaseVersion: 9.6.4, appiumVersion: 1.8.0, applicationClearData: false, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, automationName: XCUITest, bundleId: com.sph.stiPhone, commandTimeouts: 120000, desired: {bundleId: com.sph.stiPhone, deviceQuery: @serialNumber=&apos;00008030-000..., instrumentApp: false, noReset: true, platformName: iOS}, device.category: PHONE, device.majorVersion: 16, device.manufacture: Apple, device.model: iPhone 11 Pro, device.name: iPhone 11 Pro SPH-0015, device.os: iOS, device.screenSize: 1125x2436, device.serialNumber: 00008030-0002548A2298802E, device.version: 16.0, deviceQuery: @serialNumber=&apos;00008030-000..., deviceUDID: 00008030-0002548A2298802E, dontGoHomeOnQuit: false, dontStopAppOnReset: false, ehmPrefixUrl: /agent-2, ehmUrl: https://sph.experitest.com:..., fullReset: false, gridNodePort: 7816, install.only.for.update: false, installOnlyForUpdate: false, instrumentApp: false, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600.0, noReset: true, platform: IOS, platformName: iOS, projectName: , reportDirectory: reports, reportFormat: xml, reportTestId: 134634.0, reportUrl: https://sph.experitest.com:..., reservationDuration: 240.0, takeScreenshots: true, test.type: Mobile, testName: mobile test 09/15/22 03:54 AM, udid: 00008030-0002548A2298802E, useKeystore: false, waitForDeviceTimeout: 120000.0}
+Session ID: CLOUD-SID:2022-09-15_03-35-09-759d3047-5679-4b8e-8851-fe83d8792fd7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at com.mop.qa.pageobject.StraitsTimes_IOS.TC_7954_Article_listing_page_Via_Elastic_search_Recent_searches_Delete(StraitsTimes_IOS.java:2703)
+	at com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7954_Article_listing_page_Via_Elastic_search_Recent_searches_Delete(StraitsTimes_Regression_IOS.java:130)
+	at com.mop.qa.testrunner.TestRunner.main(TestRunner.java:167)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace385538136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace385538136'><pre>org.openqa.selenium.WebDriverException: unknown error (An unknown server-side error occurred. status=&apos;false&apos;. Failed to complete internal method: &apos;elementSendText args: [NATIVE, xpath=(//*[@placeholder=&apos;Search The Straits Times?&apos;])[1], 0, google
+]&apos;, details: Failed to send text to &apos;xpath=(//*[@placeholder=&apos;Search The Straits Times?&apos;])[1]&apos;. Error Domain=XCTDaemonErrorDomain Code=21 &quot;Unable to perform 
+&lt;XCSynthesizedEventRecord &apos;tap display 0&apos;&gt;
+Path 1:
+	
+Touch down at 172.0, 71.0, offset=0.00s
+	Touch up at 172.0, 71.0, offset=0.05s, only one gesture can be performed at a time.&quot; UserInfo={NSLocalizedDescription=Unable to perform 
+
+&lt;XCSynthesizedEventRecord &apos;tap display 0&apos;&gt;
+Path 1:
+	Touch down at 172.0, 71.0, offset=0.00s
+	Touch up at 172.0, 71.0, offset=0.05s, only one gesture can be performed at a time.}
+)  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LTIN184808&apos;, ip: &apos;192.168.0.73&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {appBuildVersion: 4, appReleaseVersion: 9.6.4, appiumVersion: 1.8.0, applicationClearData: false, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, automationName: XCUITest, bundleId: com.sph.stiPhone, commandTimeouts: 120000, desired: {bundleId: com.sph.stiPhone, deviceQuery: @serialNumber=&apos;00008030-000..., instrumentApp: false, noReset: true, platformName: iOS}, device.category: PHONE, device.majorVersion: 16, device.manufacture: Apple, device.model: iPhone 11 Pro, device.name: iPhone 11 Pro SPH-0015, device.os: iOS, device.screenSize: 1125x2436, device.serialNumber: 00008030-0002548A2298802E, device.version: 16.0, deviceQuery: @serialNumber=&apos;00008030-000..., deviceUDID: 00008030-0002548A2298802E, dontGoHomeOnQuit: false, dontStopAppOnReset: false, ehmPrefixUrl: /agent-2, ehmUrl: https://sph.experitest.com:..., fullReset: false, gridNodePort: 7816, install.only.for.update: false, installOnlyForUpdate: false, instrumentApp: false, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600.0, noReset: true, platform: IOS, platformName: iOS, projectName: , reportDirectory: reports, reportFormat: xml, reportTestId: 134634.0, reportUrl: https://sph.experitest.com:..., reservationDuration: 240.0, takeScreenshots: true, test.type: Mobile, testName: mobile test 09/15/22 03:54 AM, udid: 00008030-0002548A2298802E, useKeystore: false, waitForDeviceTimeout: 120000.0}
+Session ID: CLOUD-SID:2022-09-15_03-35-09-759d3047-5679-4b8e-8851-fe83d8792fd7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at com.mop.qa.pageobject.StraitsTimes_IOS.TC_7954_Article_listing_page_Via_Elastic_search_Recent_searches_Delete(StraitsTimes_IOS.java:2703)
+	at com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7954_Article_listing_page_Via_Elastic_search_Recent_searches_Delete(StraitsTimes_Regression_IOS.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at com.mop.qa.testrunner.TestRunner.main(TestRunner.java:167)
+</pre></div></td>
+<td>56</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7982_Article_listing_page_Via_Elastic_search_Keyword_search_Relevance()'><b>TC_7982_Article_listing_page_Via_Elastic_search_Keyword_search_Relevance</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@placeholder=&apos;Search The Straits Times?&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LTIN184808&apos;, ip: &apos;192.168.0.73&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {appBuildVersion: 4, appReleaseVersion: 9.6.4, appiumVersion: 1.8.0, applicationClearData: false, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, automationName: XCUITest, bundleId: com.sph.stiPhone, commandTimeouts: 120000, desired: {bundleId: com.sph.stiPhone, deviceQuery: @serialNumber=&apos;00008030-000..., instrumentApp: false, noReset: true, platformName: iOS}, device.category: PHONE, device.majorVersion: 16, device.manufacture: Apple, device.model: iPhone 11 Pro, device.name: iPhone 11 Pro SPH-0015, device.os: iOS, device.screenSize: 1125x2436, device.serialNumber: 00008030-0002548A2298802E, device.version: 16.0, deviceQuery: @serialNumber=&apos;00008030-000..., deviceUDID: 00008030-0002548A2298802E, dontGoHomeOnQuit: false, dontStopAppOnReset: false, ehmPrefixUrl: /agent-2, ehmUrl: https://sph.experitest.com:..., fullReset: false, gridNodePort: 7816, install.only.for.update: false, installOnlyForUpdate: false, instrumentApp: false, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600.0, noReset: true, platform: IOS, platformName: iOS, projectName: , reportDirectory: reports, reportFormat: xml, reportTestId: 134634.0, reportUrl: https://sph.experitest.com:..., reservationDuration: 240.0, takeScreenshots: true, test.type: Mobile, testName: mobile test 09/15/22 03:54 AM, udid: 00008030-0002548A2298802E, useKeystore: false, waitForDeviceTimeout: 120000.0}
+Session ID: CLOUD-SID:2022-09-15_03-35-09-759d3047-5679-4b8e-8851-fe83d8792fd7
+*** Element info: {Using=xpath, value=//*[@placeholder=&apos;Search The Straits Times?&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at com.mop.qa.pageobject.StraitsTimes_IOS.TC_7977_Article_listing_page_Via_Elastic_search_Keyword_search_Relevance(StraitsTimes_IOS.java:2769)
+	at com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7982_Article_listing_page_Via_Elastic_search_Keyword_search_Relevance(StraitsTimes_Regression_IOS.java:139)
+	at com.mop.qa.testrunner.TestRunner.main(TestRunner.java:167)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace424772389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace424772389'><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@placeholder=&apos;Search The Straits Times?&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LTIN184808&apos;, ip: &apos;192.168.0.73&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {appBuildVersion: 4, appReleaseVersion: 9.6.4, appiumVersion: 1.8.0, applicationClearData: false, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, automationName: XCUITest, bundleId: com.sph.stiPhone, commandTimeouts: 120000, desired: {bundleId: com.sph.stiPhone, deviceQuery: @serialNumber=&apos;00008030-000..., instrumentApp: false, noReset: true, platformName: iOS}, device.category: PHONE, device.majorVersion: 16, device.manufacture: Apple, device.model: iPhone 11 Pro, device.name: iPhone 11 Pro SPH-0015, device.os: iOS, device.screenSize: 1125x2436, device.serialNumber: 00008030-0002548A2298802E, device.version: 16.0, deviceQuery: @serialNumber=&apos;00008030-000..., deviceUDID: 00008030-0002548A2298802E, dontGoHomeOnQuit: false, dontStopAppOnReset: false, ehmPrefixUrl: /agent-2, ehmUrl: https://sph.experitest.com:..., fullReset: false, gridNodePort: 7816, install.only.for.update: false, installOnlyForUpdate: false, instrumentApp: false, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600.0, noReset: true, platform: IOS, platformName: iOS, projectName: , reportDirectory: reports, reportFormat: xml, reportTestId: 134634.0, reportUrl: https://sph.experitest.com:..., reservationDuration: 240.0, takeScreenshots: true, test.type: Mobile, testName: mobile test 09/15/22 03:54 AM, udid: 00008030-0002548A2298802E, useKeystore: false, waitForDeviceTimeout: 120000.0}
+Session ID: CLOUD-SID:2022-09-15_03-35-09-759d3047-5679-4b8e-8851-fe83d8792fd7
+*** Element info: {Using=xpath, value=//*[@placeholder=&apos;Search The Straits Times?&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at com.mop.qa.pageobject.StraitsTimes_IOS.TC_7977_Article_listing_page_Via_Elastic_search_Keyword_search_Relevance(StraitsTimes_IOS.java:2769)
+	at com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7982_Article_listing_page_Via_Elastic_search_Keyword_search_Relevance(StraitsTimes_Regression_IOS.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at com.mop.qa.testrunner.TestRunner.main(TestRunner.java:167)
+</pre></div></td>
+<td>44</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7899_Bookmark_able_to_bookmark_from_listing_page()'><b>TC_7899_Bookmark_able_to_bookmark_from_listing_page</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>87</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7901_Latest_Tab_Should_be_able_to_bookmark()'><b>TC_7901_Latest_Tab_Should_be_able_to_bookmark</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>27</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7903_Discover_Tab()'><b>TC_7903_Discover_Tab</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>78</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7908_Articles_Details_Scroll_Scrolling_through_articles_and_then_for_any_particular_article_try_to_access_full_article_page()'><b>TC_7908_Articles_Details_Scroll_Scrolling_through_articles_and_then_for_any_particular_article_try_to_access_full_article_page</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>124</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7909_Tutorials_screen_on_Bookmark_Settings_epaper()'><b>TC_7909_Tutorials_screen_on_Bookmark_Settings_epaper</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>164</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7911_Latest_Tab_Should_should_load_without_errors()'><b>TC_7911_Latest_Tab_Should_should_load_without_errors</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>31</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7915_Bookmark_Enable_Disable_bookmark_from_listing_and_Article_detail_page()'><b>TC_7915_Bookmark_Enable_Disable_bookmark_from_listing_and_Article_detail_page</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>79</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7919_Article_listing_page_Via_Elastic_search_Article_page()'><b>TC_7919_Article_listing_page_Via_Elastic_search_Article_page</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>109</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7920_ePaper_User_should_be_asked_to_login_to_view_epaper()'><b>TC_7920_ePaper_User_should_be_asked_to_login_to_view_epaper</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>42</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7925_LogIn_ST_Lite_user_should_be_able_to_access_subscribed_article_but_cannot_access_epaper()'><b>TC_7925_LogIn_ST_Lite_user_should_be_able_to_access_subscribed_article_but_cannot_access_epaper</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>192</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7926_Article_Listing_page_via_Sections_page_videos()'><b>TC_7926_Article_Listing_page_via_Sections_page_videos</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>61</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7927_ePaper_Delete_downloaded_epaper()'><b>TC_7927_ePaper_Delete_downloaded_epaper</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>25</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7928_Article_listing_page_Via_Elastic_search_keyword_search_Recent()'><b>TC_7928_Article_listing_page_Via_Elastic_search_keyword_search_Recent</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>135</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7933_Article_listing_page_Via_Elastic_search_Recent_searches()'><b>TC_7933_Article_listing_page_Via_Elastic_search_Recent_searches</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>157</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7934_LogIn_mysph_Login()'><b>TC_7934_LogIn_mysph_Login</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>177</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7937_Article_Listing_page_via_Sections_page_Article_page()'><b>TC_7937_Article_Listing_page_via_Sections_page_Article_page</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>94</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7942_ePaper_user_should_be_able_to_download_epaper()'><b>TC_7942_ePaper_user_should_be_able_to_download_epaper</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>135</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7946_Article_listing_page_Via_Elastic_search_Search_by_keyword()'><b>TC_7946_Article_listing_page_Via_Elastic_search_Search_by_keyword</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>99</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7947_Article_listing_page_Via_Elastic_search_Search_by_article_headline()'><b>TC_7947_Article_listing_page_Via_Elastic_search_Search_by_article_headline</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>114</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7952_Article_Details_page_More_from_Web()'><b>TC_7952_Article_Details_page_More_from_Web</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>500</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7953_Article_Listing_page_via_Sections_page()'><b>TC_7953_Article_Listing_page_via_Sections_page</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>73</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7977_Article_listing_page_Via_Elastic_search_Search_by_Category_Show_more_Less()'><b>TC_7977_Article_listing_page_Via_Elastic_search_Search_by_Category_Show_more_Less</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>89</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_7994_Article_listing_page_Via_Elastic_search_Search_by_Category()'><b>TC_7994_Article_listing_page_Via_Elastic_search_Search_by_Category</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>113</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitsTimes_Regression_IOS.TC_8009_straitTimes_login_reg_user_()'><b>TC_8009_straitTimes_login_reg_user_</b><br>Test class: com.mop.qa.test.regression.StraitsTimes_Regression_IOS</td>
+<td></td>
+<td>55</td>
+<td>com.mop.qa.test.regression.StraitsTimes_Regression_IOS@11dc3715</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<html>
+<head>
+<title>TestNG:  StraitTimes_Article_Detail_Page_Reg-Run1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>StraitTimes_Article_Detail_Page_Reg-Run1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 15 11:57:14 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>5748 seconds (5748923 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Launch_and_Close_app()'><b>Launch_and_Close_app</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Your session was disconnected - Device Reservation Ended (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LTIN184808&apos;, ip: &apos;192.168.0.73&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {appBuildVersion: 4, appReleaseVersion: 9.6.4, appiumVersion: 1.8.0, applicationClearData: false, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, automationName: XCUITest, bundleId: com.sph.stiPhone, commandTimeouts: 120000, desired: {bundleId: com.sph.stiPhone, deviceQuery: @serialNumber=&apos;00008030-000..., instrumentApp: false, noReset: true, platformName: iOS}, device.category: PHONE, device.majorVersion: 16, device.manufacture: Apple, device.model: iPhone 11 Pro, device.name: iPhone 11 Pro SPH-0015, device.os: iOS, device.screenSize: 1125x2436, device.serialNumber: 00008030-0002548A2298802E, device.version: 16.0, deviceQuery: @serialNumber=&apos;00008030-000..., deviceUDID: 00008030-0002548A2298802E, dontGoHomeOnQuit: false, dontStopAppOnReset: false, ehmPrefixUrl: /agent-2, ehmUrl: https://sph.experitest.com:..., fullReset: false, gridNodePort: 7816, install.only.for.update: false, installOnlyForUpdate: false, instrumentApp: false, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600.0, noReset: true, platform: IOS, platformName: iOS, projectName: , reportDirectory: reports, reportFormat: xml, reportTestId: 134643.0, reportUrl: https://sph.experitest.com:..., reservationDuration: 240.0, takeScreenshots: true, test.type: Mobile, testName: mobile test 09/15/22 06:28 AM, udid: 00008030-0002548A2298802E, useKeystore: false, waitForDeviceTimeout: 120000.0}
+Session ID: CLOUD-SID:2022-09-15_03-35-09-759d3047-5679-4b8e-8851-fe83d8792fd7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at io.appium.java_client.InteractsWithApps.launchApp(InteractsWithApps.java:50)
+	at com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Launch_and_Close_app(StraitTimes_Article_Detail_Page_Reg.java:17)
+	at com.mop.qa.testrunner.TestRunner.main(TestRunner.java:167)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2017950619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2017950619'><pre>org.openqa.selenium.NoSuchSessionException: Your session was disconnected - Device Reservation Ended (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LTIN184808&apos;, ip: &apos;192.168.0.73&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {appBuildVersion: 4, appReleaseVersion: 9.6.4, appiumVersion: 1.8.0, applicationClearData: false, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, automationName: XCUITest, bundleId: com.sph.stiPhone, commandTimeouts: 120000, desired: {bundleId: com.sph.stiPhone, deviceQuery: @serialNumber=&apos;00008030-000..., instrumentApp: false, noReset: true, platformName: iOS}, device.category: PHONE, device.majorVersion: 16, device.manufacture: Apple, device.model: iPhone 11 Pro, device.name: iPhone 11 Pro SPH-0015, device.os: iOS, device.screenSize: 1125x2436, device.serialNumber: 00008030-0002548A2298802E, device.version: 16.0, deviceQuery: @serialNumber=&apos;00008030-000..., deviceUDID: 00008030-0002548A2298802E, dontGoHomeOnQuit: false, dontStopAppOnReset: false, ehmPrefixUrl: /agent-2, ehmUrl: https://sph.experitest.com:..., fullReset: false, gridNodePort: 7816, install.only.for.update: false, installOnlyForUpdate: false, instrumentApp: false, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600.0, noReset: true, platform: IOS, platformName: iOS, projectName: , reportDirectory: reports, reportFormat: xml, reportTestId: 134643.0, reportUrl: https://sph.experitest.com:..., reservationDuration: 240.0, takeScreenshots: true, test.type: Mobile, testName: mobile test 09/15/22 06:28 AM, udid: 00008030-0002548A2298802E, useKeystore: false, waitForDeviceTimeout: 120000.0}
+Session ID: CLOUD-SID:2022-09-15_03-35-09-759d3047-5679-4b8e-8851-fe83d8792fd7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at io.appium.java_client.InteractsWithApps.launchApp(InteractsWithApps.java:50)
+	at com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Launch_and_Close_app(StraitTimes_Article_Detail_Page_Reg.java:17)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at com.mop.qa.testrunner.TestRunner.main(TestRunner.java:167)
+</pre></div></td>
+<td>0</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.afterMethod()'><b>afterMethod</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>0</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7512_Article_listing_page_via_section_page_bookmark()'><b>Sprint12_TC_7512_Article_listing_page_via_section_page_bookmark</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>303</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7893_epaper_clear_all_download()'><b>Sprint12_TC_7893_epaper_clear_all_download</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>423</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7949_epaper_Auto_DL_turn_Off()'><b>Sprint12_TC_7949_epaper_Auto_DL_turn_Off</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>402</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7951_Share_with_without_scrolling()'><b>Sprint12_TC_7951_Share_with_without_scrolling</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>142</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7952_Article_Detail_Page_More_From_Web()'><b>Sprint12_TC_7952_Article_Detail_Page_More_From_Web</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>798</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7956_Article_Detail_Page_AuthorHead()'><b>Sprint12_TC_7956_Article_Detail_Page_AuthorHead</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>107</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7961_Article_details_page_with_embedded_image()'><b>Sprint12_TC_7961_Article_details_page_with_embedded_image</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>120</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7968_Article_details_page_Podcast_sharing()'><b>Sprint12_TC_7968_Article_details_page_Podcast_sharing</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>195</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7971_Article_listing_page_via_section_pages_more_link_on_sectionpage()'><b>Sprint12_TC_7971_Article_listing_page_via_section_pages_more_link_on_sectionpage</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>193</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7973_Article_Detail_Page_BookMark()'><b>Sprint12_TC_7973_Article_Detail_Page_BookMark</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>215</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7979_Article_Detail_Page_AuthorHead_Author_Page()'><b>Sprint12_TC_7979_Article_Detail_Page_AuthorHead_Author_Page</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>170</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7981_Article_Details_page_Published_or_Updated()'><b>Sprint12_TC_7981_Article_Details_page_Published_or_Updated</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>103</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7983_Article_Detail_Page_More_On_This_Topic()'><b>Sprint12_TC_7983_Article_Detail_Page_More_On_This_Topic</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>498</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7984_Article_Detail_Page_More_From_StraitTimes()'><b>Sprint12_TC_7984_Article_Detail_Page_More_From_StraitTimes</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>776</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_7995_Article_Detail_Page_AuthorHead_Designation()'><b>Sprint12_TC_7995_Article_Detail_Page_AuthorHead_Designation</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>105</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.Sprint12_TC_8002_Article_Headline()'><b>Sprint12_TC_8002_Article_Headline</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>62</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.TC_7904_Bookmark_Swipe_left_to_delete_bookmark()'><b>TC_7904_Bookmark_Swipe_left_to_delete_bookmark</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>360</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.TC_7992_Article_Listing_Page_Via_authors_Bookmark()'><b>TC_7992_Article_Listing_Page_Via_authors_Bookmark</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>155</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+<tr>
+<td title='com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg.TC_8005_Article_Listing_Page_Via_authors_Authorspage()'><b>TC_8005_Article_Listing_Page_Via_authors_Authorspage</b><br>Test class: com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg</td>
+<td></td>
+<td>184</td>
+<td>com.mop.qa.test.regression.StraitTimes_Article_Detail_Page_Reg@75f32542</td></tr>
+</table><p>
+</body>
+</html>
