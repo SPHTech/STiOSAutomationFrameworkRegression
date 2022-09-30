@@ -2164,6 +2164,7 @@ public class StraitsTimes_IOS extends PageBase {
 				click(gotit_first, "Got it");
 			if (ad(logout))
 				click(logout, "logout");
+			click("//*[@id='LOG IN']","Login");
 			if(present(continued)) {
 				click(continued,"Continue");
 				Thread.sleep(5000);
@@ -2171,12 +2172,12 @@ public class StraitsTimes_IOS extends PageBase {
 			if (present(loginintodifferentST)) {
 				click(loginintodifferentST, "login into different account");
 			}
-			enterusernameST.sendKeys("mysphtest1004@test.com");
+			enterusernameST.sendKeys("testsublite_ga@test.com");
 			appiumDriver.hideKeyboard();
-			enterpasswordST.click();
-			enterpasswordST.sendKeys("ctstest123");
+//			enterpasswordST.click();
+			enterpasswordST.sendKeys("pass4321");
 			appiumDriver.hideKeyboard();
-			click(loginbtnST, "Login");
+			click("//*[@id='LOG IN' and @class='UIAButton']", "Login");
 			if (ad(adNoThanks)) {
 				click(adNoThanks, "No Thanks!");
 				click(adGotit, "got it!");
@@ -2303,7 +2304,7 @@ public class StraitsTimes_IOS extends PageBase {
 			}
 			enterusernameST.sendKeys("testsublite_ga@test.com");
 			appiumDriver.hideKeyboard();
-			enterpasswordST.click();
+//			enterpasswordST.click();
 			enterpasswordST.sendKeys("pass4321");
 			appiumDriver.hideKeyboard();
 			click("//*[@id='LOG IN' and @class='UIAButton']", "Login");
@@ -2372,7 +2373,7 @@ public class StraitsTimes_IOS extends PageBase {
 
  @FindBy(xpath = "(//*[@id='CarouselImageCell.titleLabel'])[1]")
 	private WebElement heading;
- @FindBy(xpath = "//*[@id='Done']")
+ @FindBy(xpath = "//*[@text='Done' and @class='UIAStaticText']")
 	private WebElement Done;
  public void TC_7897_Discover_on_Home_Page() throws Exception{
 	  
@@ -2429,10 +2430,12 @@ public class StraitsTimes_IOS extends PageBase {
  // TC-7920	 ePaper || User should be asked to login to view epaper
  public void TC_7920_ePaper_User_should_be_asked_to_login_to_view_epaper() throws Exception {
 		try {
-			
+			click(menu,"Menu");
+			if(present(logout)) {
+				click(logout,"Logout");
+			}
 			click(epapericon, "E-paper");
-			click(onpaper, " e-paper");
-			if(present(epaperloginbtn)) {
+			click("//*[@text='READ E-PAPER']", " e-paper");
 			click(epaperloginbtn, " login");
 			if(present(continued)) {
 				click(continued,"Continue");
@@ -2451,11 +2454,10 @@ public class StraitsTimes_IOS extends PageBase {
 				click(adNoThanks, "No Thanks!");
 				click(adGotit, "got it!");
 			}
-			}
 			assertEquals("e-paper login successful", "E-PAPER", mainpage.getText());
-			click(menu, "menu");
-			if (ad(logout))
-				click(logout, "logout");
+//			click(menu, "menu");
+//			if (ad(logout))
+//				click(logout, "logout");
 
 			
 		} catch (Exception e) {
@@ -2479,43 +2481,43 @@ public class StraitsTimes_IOS extends PageBase {
  public void TC_7927_ePaper_Delete_downloaded_epaper() throws Exception {
 		try {
 			
-			click(epapericon, "E-paper");
-			click(downloadicon,"e-paper download icon");
+//			click(epapericon, "E-paper");
+//			click(downloadicon,"e-paper download icon");
+//			
+//			if(ad(epaperloginbtn)) {
+//			click(epaperloginbtn, " login");
+//			if(present(continued)) {
+//				click(continued,"Continue");
+//				Thread.sleep(5000);
+//			}
+//			if (present(loginintodifferentST)) {
+//				click(loginintodifferentST, "login into different account");
+//			}
+//			enterusernameST.sendKeys("autotest_mysph@test.com");
+//			appiumDriver.hideKeyboard();
+////			enterpasswordST.click();
+//			enterpasswordST.sendKeys("Password123");
+//			appiumDriver.hideKeyboard();
+//			click(loginbtnST, "Login");
+//			if (ad(adNoThanks)) {
+//				click(adNoThanks, "No Thanks!");
+//				click(adGotit, "got it!");
+//			}
+//			
+//			click(downloadicon, " e-paper download icon");
+//			}
+//			if(ad(downloadicon))
+//				Thread.sleep(5000);
+//			if(ad(downloadicon))
+//				Thread.sleep(5000);
+//			if(ad(downloadicon))
+//				Thread.sleep(5000);
+//			if(ad(downloadicon))
+//				Thread.sleep(5000);
 			
-			if(ad(epaperloginbtn)) {
-			click(epaperloginbtn, " login");
-			if(present(continued)) {
-				click(continued,"Continue");
-				Thread.sleep(5000);
-			}
-			if (present(loginintodifferentST)) {
-				click(loginintodifferentST, "login into different account");
-			}
-			enterusernameST.sendKeys("autotest_mysph@test.com");
-			appiumDriver.hideKeyboard();
-			enterpasswordST.click();
-			enterpasswordST.sendKeys("Password123");
-			appiumDriver.hideKeyboard();
-			click(loginbtnST, "Login");
-			if (ad(adNoThanks)) {
-				click(adNoThanks, "No Thanks!");
-				click(adGotit, "got it!");
-			}
 			
-			click(downloadicon, " e-paper download icon");
-			}
-			if(ad(downloadicon))
-				Thread.sleep(5000);
-			if(ad(downloadicon))
-				Thread.sleep(5000);
-			if(ad(downloadicon))
-				Thread.sleep(5000);
-			if(ad(downloadicon))
-				Thread.sleep(5000);
-			
-			
-			click(menu,"menu");
-			click(settings,"settings");
+//			click(menu,"menu");
+//			click(settings,"settings");
 			click(download,"Downloaded");
 			if(ad(delete))
 			click(delete,"delete");
@@ -2529,42 +2531,41 @@ public class StraitsTimes_IOS extends PageBase {
  //TC-7942	 ePaper || user should be able to download epaper
  public void TC_7942_ePaper_user_should_be_able_to_download_epaper() throws Exception {
 		try {
-			
+			int n=0;
 			click(epapericon, "E-paper");
 			click(downloadicon,"e-paper download icon");
 			
-			if(ad(epaperloginbtn)) {
-			click(epaperloginbtn, " login");
-
-			if(present(continued)) {
-				click(continued,"Continue");
-				Thread.sleep(5000);
-			}
-			if (present(loginintodifferentST)) {
-				click(loginintodifferentST, "login into different account");
-			}
-			enterusernameST.sendKeys("autotest_mysph@test.com");
-			appiumDriver.hideKeyboard();
-			enterpasswordST.click();
-			enterpasswordST.sendKeys("Password123");
-			appiumDriver.hideKeyboard();
-			click(loginbtnST, "Login");
-			if (ad(adNoThanks)) {
-				click(adNoThanks, "No Thanks!");
-				click(adGotit, "got it!");
-			}
+//			if(ad(epaperloginbtn)) {
+//			click(epaperloginbtn, " login");
+//
+//			if(present(continued)) {
+//				click(continued,"Continue");
+//				Thread.sleep(5000);
+//			}
+//			if (present(loginintodifferentST)) {
+//				click(loginintodifferentST, "login into different account");
+//			}
+//			enterusernameST.sendKeys("autotest_mysph@test.com");
+//			appiumDriver.hideKeyboard();
+////			enterpasswordST.click();
+//			enterpasswordST.sendKeys("Password123");
+//			appiumDriver.hideKeyboard();
+//			click(loginbtnST, "Login");
+//			if (ad(adNoThanks)) {
+//				click(adNoThanks, "No Thanks!");
+//				click(adGotit, "got it!");
+//			}
+//			
+//			click(downloadicon, " e-paper download icon");
+//			}
 			
-			click(downloadicon, " e-paper download icon");
+			while(present(downloadicon)) {
+				n++;
+				 Thread.sleep(5000);
+				 if(n==15) {
+					 break;
+				 }
 			}
-			
-			if(ad(downloadicon))
-				 Thread.sleep(5000);
-			if(ad(downloadicon))
-				 Thread.sleep(5000);
-			if(ad(downloadicon))
-				 Thread.sleep(5000);
-			if(ad(downloadicon))
-				 Thread.sleep(5000);
 				System.out.println(ad(icon_complete));
 				ExtentUtility.getTest().log(LogStatus.PASS, "epaper download",
 						ExtentUtility.getTest().addScreenCapture(takeScreenShot()));
@@ -2572,9 +2573,9 @@ public class StraitsTimes_IOS extends PageBase {
 				click(menu,"menu");
 				click(settings,"settings");
 				click(download,"Downloaded");
-				if(ad(delete)) {
-				click(delete,"delete");
-				}
+//				if(ad(delete)) {
+//				click(delete,"delete");
+//				}
 				click(downloaded_back," back");
 			}
 		} catch (Exception e) {
@@ -2605,7 +2606,7 @@ public class StraitsTimes_IOS extends PageBase {
 	 advertisement();
 	 click(homepage_title,"home");
 	 click(search_icon,"search");
-	 click(search_bar,"searchbar");
+//	 click(search_bar,"searchbar");
 	 String key="Google";
 	 search_bar.sendKeys(key+"\n");
 	 
@@ -2666,13 +2667,14 @@ public class StraitsTimes_IOS extends PageBase {
 	  click(search_icon,"search");
 	  click(search_bar,"searchbar");
 	  String key="google";
-	  search_bar.sendKeys(key+"\n");
+	  search_bar.sendKeys(key+"\n"); 
+	  click("//*[@text='Clear text']","clear text");
+//	  click(search_icon,"search");
+	  Thread.sleep(5000);
 	  
-	  click(close_icon,"clear text");
-	  click(search_icon,"search");
-	  
-	 if( recent.isDisplayed()) 
+	 if( recent.isDisplayed()) {
           recent_keyword1.isDisplayed();
+	 }
 	click(recent_keyword1,"recent searches");
 	String text1=searchtext1.getText(); 
 	  String text2=searchtext2.getText();
@@ -2702,15 +2704,15 @@ public class StraitsTimes_IOS extends PageBase {
 		String key1="google";
 		search_bar.sendKeys(key1+"\n");
 		click(clear_text,"clear text");
-		
+		click(search_bar,"searchbar");
 		String key2="instagram";
 		search_bar.sendKeys(key2+"\n");
 		click(clear_text,"clear text");
-		
-		String key3="facebook";
-		search_bar.sendKeys(key3+"\n");
-		click(clear_text,"clear text");
-		
+//		click(search_bar,"searchbar");
+//		String key3="facebook";
+//		search_bar.sendKeys(key3+"\n");
+//		click(clear_text,"clear text");
+	
 		/*
 		 * String key4="whatsapp"; search_bar.sendKeys(key4+"\n");
 		 * click(clear_text,"clear text");
@@ -2719,8 +2721,8 @@ public class StraitsTimes_IOS extends PageBase {
 		 * click(clear_text,"clear text");
 		 */
 		
-		click(appiumDriver.findElement(By.xpath("//*[@value='close icon']")),"Cancel");
-		click(search_icon,"Search");
+//		click("//*[@value='close icon']","Cancel");
+//		click(search_icon,"Search");
 		if(present(trash_icon)) {
 			click(trash_icon,"History deleted");
 		ExtentUtility.getTest().log(LogStatus.PASS, "History deleted",
@@ -2830,7 +2832,7 @@ public class StraitsTimes_IOS extends PageBase {
 	  
 	
 	  @FindBy(xpath = "//*[@id='ArticleHeaderViewController.headlineLabel']")
-			private WebElement headline;
+	  private WebElement headline;
 	  
 	  public void TC_7947_Article_listing_page_Via_Elastic_search_Search_by_article_headline() throws
 	  Exception{
@@ -2862,10 +2864,10 @@ public class StraitsTimes_IOS extends PageBase {
 	  advertisement();
 	  click(homepage_title,"home");
 	  for(int i=0;i<4;i++)
-		  swipeUp();
+		 singleScrollDown();
 	  ExtentUtility.getTest().log(LogStatus.PASS,"articles scroll" ,
 			  ExtentUtility.getTest().addScreenCapture(takeScreenShot()));
-	  click(close_icon,"Close");
+//	  click(close_icon,"Close");
 	  } 
 	  TouchAction action = new TouchAction(appiumDriver);
 		PointOption p1= new PointOption();
@@ -3260,10 +3262,11 @@ public void TC_7894_Latest_Tab_Should_be_able_to_share() throws Exception{
 			}
 			enterusernameST.sendKeys("autotest_mysph@test.com");
 			appiumDriver.hideKeyboard();
-			enterpasswordST.click();
+//			enterpasswordST.click();
 			enterpasswordST.sendKeys("Password123");
 			appiumDriver.hideKeyboard();
 			click(loginbtnST, "Login");
+			Thread.sleep(5000);
 			if (ad(adNoThanks)) {
 				click(adNoThanks, "No Thanks!");
 				click(adGotit, "got it!");
@@ -3512,6 +3515,7 @@ public void Settings_LogOut_LogIn_Button_should_display() {
 }
 public void Settings_Downloaded() {
 	try {
+		int n=0;
 		if (present(Advertisement)) {
 			click(Advertisement, "Close Advertisement");
 		}
@@ -3520,8 +3524,10 @@ public void Settings_Downloaded() {
 			click(Notification, "Click on Got it");
 		}
 		click(Download_e_paper, "Download E paper");
-		if(present(Download_e_paper)) {
+		while(present(Download_e_paper)) {
 			Thread.sleep(7000);
+			n++;
+			if(n==20) {break;}
 		}
 		click(Menu, "Click on menu icon");
 		click(Settings, "click on settings");
@@ -3572,7 +3578,8 @@ public void Settings_PrivacyPolicy() {
 public void Settings_Terms_Condition() {
 	try {
 		click(Terms_and_Condition, "Click on Terms and Condition");
-		System.out.println(Terms_and_Condition.isDisplayed());
+		Thread.sleep(10000);
+//		System.out.println(Terms_and_Condition.isDisplayed());
 		click(Done, "Click on Done");
 	} catch (Exception e) {
 		System.out.println(e);
@@ -3581,7 +3588,7 @@ public void Settings_Terms_Condition() {
 
 public void Settings_Version_Number() {
 	try {
-		System.out.println(Version_No_Verification.isDisplayed());
+//		System.out.println(Version_No_Verification.isDisplayed());
 		click(Version_No_Verification,"Version number");
 	} catch (Exception e) {
 		System.out.println(e);

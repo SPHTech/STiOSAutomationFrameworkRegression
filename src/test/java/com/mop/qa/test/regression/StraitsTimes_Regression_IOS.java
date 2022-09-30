@@ -69,6 +69,14 @@ public class StraitsTimes_Regression_IOS extends TestBase {
  		STobj.TC_7923_Articles_Details_Scroll_Verify_article_scroll();
  
  	}
+ 	
+ 	@Test(priority = 6)
+ 	public void TC_7942_ePaper_user_should_be_able_to_download_epaper() throws Exception {
+ 
+ 		STobj = toSelectTools();
+ 		STobj.TC_7942_ePaper_user_should_be_able_to_download_epaper();
+ 
+ 	}
  
  	@Test(priority = 7)
  	public void TC_7927_ePaper_Delete_downloaded_epaper() throws Exception {
@@ -97,14 +105,7 @@ public class StraitsTimes_Regression_IOS extends TestBase {
  
  	}
  
- 	@Test(priority = 10)
- 	public void TC_7942_ePaper_user_should_be_able_to_download_epaper() throws Exception {
- 
- 		STobj = toSelectTools();
- 
- 		STobj.TC_7942_ePaper_user_should_be_able_to_download_epaper();
- 
- 	}
+ 	
  
  	@Test(priority = 11)
  	public void TC_7946_Article_listing_page_Via_Elastic_search_Search_by_keyword() throws Exception {
